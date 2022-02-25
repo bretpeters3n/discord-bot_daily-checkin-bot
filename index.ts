@@ -27,11 +27,11 @@ client.on('ready', () => {
     const fccChannel = client.channels.cache.get('945513339256180750');
     console.log('The bot is ready');
 
-    // setInterval(() => {
-    //     console.log('The bot is ready');
-    //     (testChannel as TextChannel).send('hello!');
-    //     // testChannel.send('hello');
-    // }, 10000);
+    setInterval(() => {
+        console.log('The bot is ready');
+        (fccChannel as TextChannel).send('hello!');
+        // testChannel.send('hello');
+    }, 10000);
 
     // let scheduledMessage = new cron.CronJob('00 00 08 * * *', () => {
     let scheduledMessage = new cron.CronJob('00 00 18 * * *', () => {
